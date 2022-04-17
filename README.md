@@ -1,1 +1,1 @@
-# corona_project
+# 코로나 프로젝트
