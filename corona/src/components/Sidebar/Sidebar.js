@@ -18,7 +18,7 @@ function Sidebar() {
       <div
         className={`${
           open ? "w-72" : "w-20"
-        } duration-300 w-72 h-screen p-5 pt-8 bg-gradient-to-r from-blue-800 to-cyan-400   relative`}
+        } duration-300 w-72 h-screen p-5 pt-8 bg-gradient-to-r from-blue-300 to-cyan-300   relative`}
       >
         <BsArrowLeftCircle
           className={`text-4xl absolute cursor-pointer -right-3 text-white top-3 w-7 ${
@@ -27,12 +27,12 @@ function Sidebar() {
           onClick={() => setOpen(!open)}
         />
         <div className="ml-2 mt-2 flex gap-x-4 items-center ">
-          <Link to="/">
+          <Link to="">
             {!open ? (
               <AiOutlineHome className="text-3xl font-bold text-white" />
             ) : (
               <h1
-                className={`text-white origin-left font-medium text-3xl duration-300 ${
+                className={`text-white origin-left font-medium text-4xl duration-300 ${
                   !open && "scale-0"
                 }`}
               >
@@ -53,7 +53,7 @@ function Sidebar() {
                 <span
                   className={`${
                     !open && "hidden"
-                  } origin-left duration-200 font-bold text-xl text-white ml-3 `}
+                  } origin-left duration-200 font-bold text-2xl text-white ml-3  `}
                 >
                   {menu.title}
                 </span>
